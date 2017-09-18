@@ -1,3 +1,4 @@
+#creating a class called Contacts
 class Contacts():
     def __init__(self, name, phone, email, website, birthday, linkedin):
         self.name = name
@@ -8,6 +9,7 @@ class Contacts():
         self.linkedin = linkedin
 
     def get_contact(self):
+        '''return all the details of a given contact '''
         print('''
                Name : {}\n
                Phone : {}\n
