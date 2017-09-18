@@ -14,7 +14,7 @@ class Contacts():
                Email : {}\n
                Website : {}\n
                Birthday : {}\n
-               Linkedin{}'''.format(self.name,
+               Linkedin{} : '''.format(self.name,
                self.phone,
                self.email,
                self.website,
