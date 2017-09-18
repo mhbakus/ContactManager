@@ -19,3 +19,5 @@ class Contacts():
                self.website,
                self.birthday,
                self.linkedin ))
+jean = Contacts('jean', '+22545785896', 'jean@mail.fr', 'www.jean.com', '15/08/1990', 'linkedin.com/in/jean')
+jean.get_contacts()
