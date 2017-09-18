@@ -20,10 +20,17 @@ class Contacts():
                self.website,
                self.birthday,
                self.linkedin ))
-jean = Contacts('jean',
-                '+22545785896',
-                'jean@mail.fr',
-                'www.jean.com',
-                '15/08/1990',
-                'linkedin.com/in/jean')
+print("NEW CONTACT REGISTRATION\n")
+name = input("Name : ")
+tel = input("Phone : ")
+email = input("Email : ")
+website = input("Website : ")
+birthday = input("Birthday : ")
+linkedin = input("Linkedin : ")
+jean = Contacts(name,
+                tel,
+                email,
+                website,
+                birthday,
+                linkedin)
 jean.get_contact()
