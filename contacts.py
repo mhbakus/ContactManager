@@ -34,7 +34,7 @@ class ContactBook:
         for contact in self.contacts:
             if contact.name == name:
                 return contact.get_contact()
-        return none
+        return 'the contact didnt exist'
   
     def del_contact(self, name):
         for contact in self.contacts:
@@ -80,28 +80,3 @@ while not exit:
     else:
         exit = False
 
-
-  
-# print("NEW CONTACT REGISTRATION\n")
-# name = input("Name : ")
-# tel = input("Phone : ")
-# email = input("Email : ")
-# website = input("Website : ")
-# birthday = input("Birthday : ")
-# linkedin = input("Linkedin : ")
-# jean = Contacts(name,
-#                 tel,
-#                 email,
-#                 website,
-#                 birthday,
-#                 linkedin)
-# ajout = True
-# mycontacts = []
-# mycontacts.append(jean)
-
-    		
-
-
-
-
-#jean.get_contact()
