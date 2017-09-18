@@ -6,3 +6,16 @@ class Contacts():
         self.website = website
         self.birthday = birthday
         self.linkedin = linkedin
+
+    def get_contact():
+        print("Name : {}\n
+               Phone : {}\n
+               Email : {}\n
+               Website : {}\n
+               Birthday : {}\n
+               Linkedin{}".format(self.name,
+               self.phone,
+               self.email,
+               self.website,
+               self.birthday,
+               self.linkedin ))
