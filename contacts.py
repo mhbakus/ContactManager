@@ -45,7 +45,7 @@ class ContactBook:
     
 
 mycontacts = ContactBook()
-
+''' functions to add a contact '''
 def adding():
     print("NEW CONTACT REGISTRATION\n")
     name = input("Name : ")
@@ -81,7 +81,7 @@ while not exit:
         adding()
     elif answer.lower() == '2':
         contact_name = input('enter the name of contact to delete : ')
-        mycontacts.del_contact(contact_name)
+        print(mycontacts.del_contact(contact_name))
     elif answer.lower() == '3':
         contact_name = input('enter the name of contact : ')
         print(mycontacts.search_contact(contact_name))
