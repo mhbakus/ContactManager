@@ -8,20 +8,20 @@ class Contact():
         self.birthday = birthday
         self.linkedin = linkedin
 
-    def get_contact(self):
+    def __repr__(self):
         '''return all the details of a given contact '''
-        print('''
-               Name : {}\n
-               Phone : {}\n
-               Email : {}\n
-               Website : {}\n
-               Birthday : {}\n
+        return '''
+               Name : {}
+               Phone : {}
+               Email : {}
+               Website : {}
+               Birthday : {}
                Linkedin : {}'''.format(self.name,
                self.phone,
                self.email,
                self.website,
                self.birthday,
-               self.linkedin ))
+               self.linkedin )
 
 class ContactBook:
     def __init__(self, contacts = []):
@@ -32,9 +32,10 @@ class ContactBook:
 
     def search_contact(self, name):
         for contact in self.contacts:
-            if contact.name == name:
-                return contact.get_contact()
-        return 'the contact didnt exist'
+            if name in contact.name:
+                print(contact)
+        else: 
+            return 'the contact didnt exist'
   
     def del_contact(self, name):
         for contact in self.contacts:
@@ -61,6 +62,7 @@ def adding():
                                    birthday,
                                    linkedin))
     print('contact added successfull')
+
       
 
 exit = False
@@ -81,7 +83,7 @@ while not exit:
         adding()
     elif answer.lower() == '2':
         contact_name = input('enter the name of contact to delete : ')
-        print(mycontacts.del_contact(contact_name))
+        mycontacts.del_contact(contact_name)
     elif answer.lower() == '3':
         contact_name = input('enter the name of contact : ')
         print(mycontacts.search_contact(contact_name))
