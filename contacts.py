@@ -65,16 +65,27 @@ def adding():
 
 exit = False
 while not exit:
-    answer = input("please type 'add' to add a new contact, 'del' to delete a contact, 'search' to seach a contact or 'quit' to leave the program : \n")
-    if answer.lower() == 'add':
+    answer = input('''
+       __  __ _____ _   _ _   _ 
+      |  \/  | ____| \ | | | | |
+      | |\/| |  _| |  \| | | | |
+      | |  | | |___| |\  | |_| |
+      |_|  |_|_____|_| \_|\___/ 
+      \n\n\n         
+      1 .  add a new contact\n
+      2 .  delete a contact \n
+      3 .  seach a contact \n
+      4 .  leave the program : \n\n
+      ''')
+    if answer.lower() == '1':
         adding()
-    elif answer.lower() == 'del':
+    elif answer.lower() == '2':
         contact_name = input('enter the name of contact to delete : ')
         mycontacts.del_contact(contact_name)
-    elif answer.lower() == 'search':
+    elif answer.lower() == '3':
         contact_name = input('enter the name of contact : ')
-        mycontacts.search_contact(contact_name)
-    elif answer.lower() == 'quit':
+        print(mycontacts.search_contact(contact_name))
+    elif answer.lower() == '4':
         print('Bye Bye!')
         exit = True
     else:
